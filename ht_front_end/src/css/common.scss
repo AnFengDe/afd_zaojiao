@@ -1,0 +1,135 @@
+$white: #ffffff;
+$gray: #9e9e9e;
+$line_gray: #e5e5e5;
+$green: #32a9b1;
+$black: #4f4f4f;
+/**************************基本类****************************************/
+@mixin app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  overflow-x: hidden;
+}
+@mixin operate_button {
+  height: 24px;
+  width: 44px;
+  border-radius: 4px;
+}
+@mixin black_font {
+  color: $black;
+}
+/* 线的颜色宽度 */
+@mixin line {
+  border: 1px solid $line_gray;
+}
+/*绿底白字*/
+@mixin green_background_white_font {
+  color: $white;
+  background-color: $green;
+}
+/*灰底白字*/
+@mixin gray_background_white_font {
+  color: $white;
+  background-color: $gray;
+}
+@mixin no_underline {
+  text-decoration: none;
+}
+/*分割线*/
+_separation_line {
+  border-top: #f0eff5 solid 1px;
+}
+/**************************表单的相关样式****************************************/
+/* 表单的title */
+@mixin form_title() {
+  font-size: 15px;
+  color: $gray;
+}
+/*表单中的section*/
+@mixin form_selection($width:100%) {
+  background-color: $white;
+  font-size: 15px;
+  height: 35px;
+  width: $width;
+  line-height: 35px;
+  @include line;
+}
+/* 表单的input输入框 */
+@mixin form_input($width:90%,$height:35px) {
+  appearance: none;
+  border-radius: 6px;
+  @include line;
+  width: $width;
+  height: $height;
+  line-height: $height;
+  font-size: 15px;
+}
+/* 表单的外边框 */
+@mixin form_border {
+  margin: 15px 10px 10px;
+  @include line;
+  border-radius: 8px;
+}
+/*提交菜单的外部div样式*/
+@mixin submit_button_div {
+  background-color: $green;
+  border-color: $green;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+/*所有注册页面的提交按钮*/
+@mixin submit_button {
+  padding-top: 5px;
+  width: 90%;
+  height: 30px;
+  color: #fff;
+}
+/***************************标签的相关样式***************************************/
+/*标签的外边框*/
+@mixin label_border {
+  border-radius: 4px;
+  margin: 15px 10px 10px;
+  height: 95px;
+  background-color: $white;
+}
+/*标签的标题*/
+@mixin label_td_title {
+  width: 24%;
+  text-align: left;
+  line-height: 24px;
+  font-size: 15px;
+  color: $gray;
+}
+/*标签的标内容*/
+@mixin label_td_context {
+  line-height: 24px;
+  font-size: 15px;
+  color: $gray;
+  text-align: left;
+}
+/*标签底部的样式*/
+@mixin label_bottom {
+   @extend _separation_line;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  color: $black;
+  height: 35px;
+}
+/*标签底部的按钮*/
+@mixin label_button {
+   @include operate_button;
+  @include green_background_white_font;
+  position: relative;
+  top: -5px;
+  float: right;
+  border: none;
+  font-size: 14px;
+}

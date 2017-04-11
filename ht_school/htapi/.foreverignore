@@ -1,0 +1,7 @@
+**node_modules/**
+**node_modules/.**
+**node_modules/.bin/**
+copy_app.sh
+package.json
+public/**
+views/**

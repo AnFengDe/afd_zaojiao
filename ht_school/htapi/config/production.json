@@ -1,0 +1,229 @@
+//产品环境配置
+{
+    db: {
+        host: "DB_HOST",
+        port: "DB_PORT",
+        user: "DB_USER",
+        password: "DB_PASSWORD",
+        database: "DB_NAME",
+        connectionLimit: 50
+    },
+    wx: {
+        token: "WX_TOKEN",
+        appid: "WX_APPID",
+        secret: "WX_SECRET",
+        encodingAESKey: "WX_AESKey"
+    },
+    blockchains: {
+        enable: true,
+        token: "井通商户账号",
+        address: "企业钱包地址",
+        secret: "企业钱包秘钥",
+        key: "银关KEY",
+        currency: "用户通编码",
+        issuer: "银关编码"
+    },
+    session: {
+        path: "../../session"
+    },
+    tags: {
+        "家长": "100",
+        "意向家长": "101",
+        "教师": "103",
+        "学校管理员": "102"
+    },
+    forms: {
+        teacher_register: {
+            title: "教师申请表",
+            description: "请认真填写完成有提交审核",
+            picurl: "http://child.afdoa.com/images/teacher.png",
+            url: "http://child.afdoa.com/teacher_register.html"
+        },
+        admin_register: {
+            title: "管理员申请表",
+            description: "请认真填写完成有提交审核",
+            picurl: "http://child.afdoa.com/images/teacher.png",
+            url: "http://child.afdoa.com/admin_register.html"
+        },
+        parent_register: {
+            title: "入学登记表",
+            description: "请认真填写完成有提交审核",
+            picurl: "http://child.afdoa.com/images/parent.png",
+            url: "http://child.afdoa.com/parent_register.html"
+        },
+        teacher_verification: {
+            title: "教师申请批准",
+            description: "查看审核教师申请",
+            picurl: "http://child.afdoa.com/images/teacher.png",
+            url: "http://child.afdoa.com/teacher_verification.html"
+        },
+        parent_verification: {
+            title: "入学申请批准",
+            description: "查看审核家长缴费情况，批准入学申请",
+            picurl: "http://child.afdoa.com/images/parent.png",
+            url: "http://child.afdoa.com/parent_verification.html"
+        },
+        student_check_in: {
+            title: "桃桃到学校啦",
+            description: "洋洋老师八点半接到了桃桃同学",
+            picurl: "http://child.afdoa.com/images/gotoschool.png",
+            url: "http://child.afdoa.com/parent_confirm.html"
+        },
+        student_check_out: {
+            title: "桃桃放学了，请知晓",
+            description: "桃桃妈妈，桃桃下午5点从学校放学了",
+            picurl: "http://child.afdoa.com/images/gohome.png",
+            url: "http://child.afdoa.com/parent_confirm_checkout.html"
+        },
+        school_check_in: {
+            title: "桃桃到学校啦",
+            description: "桃桃妈妈八点半送桃桃同学来上学",
+            picurl: "http://child.afdoa.com/images/gotoschool.png",
+            url: "http://child.afdoa.com/teacher_confirm.html"
+        },
+        school_check_out: {
+            title: "桃桃放学了，请知晓",
+            description: "洋洋老师给桃桃签退，下午5点从学校放学了",
+            picurl: "http://child.afdoa.com/images/gohome.png",
+            url: "http://child.afdoa.com/teacher_confirm_checkout.html"
+        },
+        parent_check: {
+            title: "桃桃放学了，请知晓",
+            description: "洋洋老师给桃桃签退，下午5点从学校放学了",
+            picurl: "http://child.afdoa.com/images/parent.png",
+            url: "http://child.afdoa.com/parent_check.html"
+        }
+    },
+    menu: {
+        "user": {
+            "button": [{
+                "name": "德瑞园校园",
+                "sub_button": [{
+                    "type": "view",
+                    "name": "动态公告",
+                    "url": "http://mp.weixin.qq.com/s/yn4TK_9g3faiQ4zXIc1aXg"
+                }, {
+                    "type": "view",
+                    "name": "特色课程",
+                    "url": "http://mp.weixin.qq.com/s/HfyxaBX5h-FMDU19Y-kc7A"
+                }, {
+                    "type": "view",
+                    "name": "德瑞园简介",
+                    "url": "http://mp.weixin.qq.com/s/M7QnzFQfnlV0EOz5yijKOg"
+                }]
+            }, {
+                "name": "正式报名",
+                "type": "view",
+                "url": "http://child.afdoa.com/parent_register.html"
+            }, {
+                "name": "免费体验",
+                "type": "view",
+                "url": "http://child.afdoa.com/appointment.html"
+            }]
+        },
+        "parent": {
+            "button": [{
+                "name": "德瑞园校园",
+                "sub_button": [{
+                    "type": "view",
+                    "name": "动态公告",
+                    "url": "http://mp.weixin.qq.com/s/yn4TK_9g3faiQ4zXIc1aXg"
+                }, {
+                    "type": "view",
+                    "name": "特色课程",
+                    "url": "http://mp.weixin.qq.com/s/HfyxaBX5h-FMDU19Y-kc7A"
+                }, {
+                    "type": "view",
+                    "name": "德瑞园简介",
+                    "url": "http://mp.weixin.qq.com/s/M7QnzFQfnlV0EOz5yijKOg"
+                }]
+            }, {
+                "type": "view",
+                "name": "接送信息",
+                "url": "http://child.afdoa.com/parent_check.html"
+            }],
+            "matchrule": {
+                "group_id": "家长"
+            }
+        },
+        "teacher": {
+            "button": [{
+                "name": "德瑞园校园",
+                "sub_button": [{
+                    "type": "view",
+                    "name": "动态公告",
+                    "url": "http://mp.weixin.qq.com/s/yn4TK_9g3faiQ4zXIc1aXg"
+                }, {
+                    "type": "view",
+                    "name": "特色课程",
+                    "url": "http://mp.weixin.qq.com/s/HfyxaBX5h-FMDU19Y-kc7A"
+                }, {
+                    "type": "view",
+                    "name": "德瑞园简介",
+                    "url": "http://mp.weixin.qq.com/s/M7QnzFQfnlV0EOz5yijKOg"
+                }]
+            }, {
+                "name": "教师中心",
+                "sub_button": [{
+                    "type": "view",
+                    "name": "预约管理",
+                    "url": "http://child.afdoa.com/appointment_verification.html"
+                }, {
+                    "type": "view",
+                    "name": "接送信息",
+                    "url": "http://child.afdoa.com/teacher_check.html"
+                }]
+            }, {
+                "type": "scancode_waitmsg",
+                "name": "接送扫码",
+                "key": "scan_code_check"
+            }],
+            "matchrule": {
+                "group_id": "教师"
+            }
+        },
+        "admin": {
+            "button": [{
+                "name": "德瑞园校园",
+                "sub_button": [{
+                    "type": "view",
+                    "name": "动态公告",
+                    "url": "http://mp.weixin.qq.com/s/yn4TK_9g3faiQ4zXIc1aXg"
+                }, {
+                    "type": "view",
+                    "name": "特色课程",
+                    "url": "http://mp.weixin.qq.com/s/HfyxaBX5h-FMDU19Y-kc7A"
+                }, {
+                    "type": "view",
+                    "name": "德瑞园简介",
+                    "url": "http://mp.weixin.qq.com/s/M7QnzFQfnlV0EOz5yijKOg"
+                }]
+            }, {
+                "name": "园务管理",
+                "sub_button": [{
+                    "type": "view",
+                    "name": "教师审核",
+                    "url": "http://child.afdoa.com/teacher_verification.html"
+                }, {
+                    "type": "view",
+                    "name": "报名审核",
+                    "url": "http://child.afdoa.com/parent_verification.html"
+                }]
+            }],
+            "matchrule": {
+                "group_id": "学校管理员"
+            }
+        }
+    },
+    "keywords": {
+        "亲子": ["http://mp.weixin.qq.com/s/lcNB7xpWmRJAGs7gLyZZtA", "http://mp.weixin.qq.com/s/Is5coYCB5nYq5c_bfF1zYg", "http://mp.weixin.qq.com/s/DFNxMsQdz9AGgRZLqfMgwA"]
+    },
+    "articles": {
+        "http://mp.weixin.qq.com/s/lcNB7xpWmRJAGs7gLyZZtA": {
+            "title": "这样陪孩子可以开发智力哦",
+            "description": "心理学家发现：音乐可以开发右脑，尤其古典音乐对孩子右脑的开发有很大影响。",
+            "picurl": "http://mmbiz.qpic.cn/mmbiz/zTRelztOeE4FRYV0WFIICicHDKrcfiatv5heHoMlQrpg24KyOQOZlOyaJiaeCOBUhOPuXBAjWHFYfSnWiaFA48eOrw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1",
+            "url": "http://mp.weixin.qq.com/s/lcNB7xpWmRJAGs7gLyZZtA"
+        }
+    }
+}
