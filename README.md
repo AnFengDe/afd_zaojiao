@@ -8,7 +8,7 @@
 <img width="180px" src="https://github.com/AnFengDe/afd_zaojiao/blob/master/doc/313737544.jpg?raw=true">
 ## 功能截屏
 报名动图
-<img width="180px" src="https://github.com/AnFengDe/afd_zaojiao/blob/master/doc/register.gif?raw=true">
+<img width="320px" src="https://github.com/AnFengDe/afd_zaojiao/blob/master/doc/register.gif?raw=true">
 
 作为早教学校，幼儿园经营者，你可以加入我们的托管平台，无须费心了解各种技术细节，零费用使用基础功能，完全满足一个小型幼儿园的需要，联系商务QQ了解详情。
 
