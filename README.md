@@ -4,7 +4,7 @@
 安风德早教平台是一个致力于提高中小幼儿园、早教、托班管理和运营的互联网平台，以微信服务号作为终端，简单易用的早教学校管理平台。
 
 早教平台QQ群: 313737544
-商务联系QQ: xxx
+<img width="180px" src="https://github.com/AnFengDe/afd_zaojiao/blob/master/doc/313737544.jpg?raw=true">
 ## 功能截屏
 TODO:功能截屏，动图
 
