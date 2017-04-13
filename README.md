@@ -10,6 +10,7 @@
 报名动图
 <img width="640px" src="https://github.com/AnFengDe/afd_zaojiao/blob/master/doc/register.gif?raw=true">
 
+## 功能截屏
 接送动图
 <img width="640px" src="https://github.com/AnFengDe/afd_zaojiao/blob/master/doc/pickup.gif?raw=true">
 
